@@ -1,0 +1,223 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SOY & SOUL</title>
+        <link rel="stylesheet" href="src/output.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+    </head>
+    <body class="bg-[#F2E8CF] min-h-screen">
+        <div>
+            <header class="w-full  bg-[#FDFBF7]/80 backdrop-blur-md sticky top-0 z-50 border-b border-[#E8DCCF]/50">
+                <div class="navbar max-w-7xl mx-auto px-6 py-3">
+                    <div class="navbar-start">
+                        <a class="text-[22px] font-bold text-[#3D2B1F]">𝑺𝑶𝒀 & 𝑺𝑶𝑼𝑳</a>
+                    </div>
+                    <div class="navbar-center hidden md:flex">
+                        <div class="relative">
+                            <input id="search" type="text" placeholder="search candles..." class="input rounded-full w-80 bg-[#EFEBE3] border-none placeholder:text-[#8B7D6B] text-[#3D2B1F] focus:bg-white" />
+                        </div>
+                    </div>
+                    <div class="navbar-end gap-2">
+                        <div id="cart-button" class="relative cursor-pointer text-[#3D2B1F] text-[26px]">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span id="cart-count" class="absolute -top-2 -right-3 bg-[#3D2B1F] text-[#FDFBF7] rounded-full w-5 h-5 text-[10px] flex items-center justify-center">0</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </header>
+            <div id="cart" class="hidden fixed top-0 right-0 h-screen w-96 bg-[#FDFBF7] shadow-2xl z-[100]">
+                <div class="flex justify-between items-center p-5 border-b border-[#E8DCCF]">
+                    <h2 class="text-2xl font-bold text-[#3D2B1F]">Shopping Cart</h2>
+                    <button id="close-cart" class="text-2xl text-[#3D2B1F]">× </button>
+                </div>
+                <div id="cart-items" class="p-5"></div>
+            </div>
+            <ul class=" list grid sm:grid-cols-3 gap-8 mx-auto px-8 py-10 "> 
+                <!--card-1-->
+                <li>
+                    <div class="card bg-base-100 w-full shadow-sm">
+                        <figure class="px-10 pt-1 h-80 w-full overflow-hidden ">
+                            <img src="images/WhatsApp Image 2026-09-30 at 10.17.33 PM.jpeg" class=" h-full w-full object-cover rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-[#3D2B1F] TEXT-[15PX] font-bold">VANILLA DREAM</h2>
+                            <p>250$</p>
+                            <div class="card-actions">
+                                <button data-name="VANILLA DREAM" data-price="250" class="btn buy-btn bg-[#3D2B1F] text-white border-none rounded-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--card-2-->
+                <li >
+                    <div class="card bg-base-100 w-full shadow-sm">
+                        <figure class="px-10 pt-1 h-80 w-full overflow-hidden ">
+                            <img src="images/WhatsApp Image 2026-09-30 at 10.17.36 PM (2).jpeg" class=" h-full w-full object-cover rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title text-[#3D2B1F] TEXT-[15PX] font-bold">WHIPPED CREAM</h2>
+                            <p>200$</p>
+                            <div class="card-actions">
+                                <button data-name="WHIPPED CREAM" data-price="200" class="btn buy-btn bg-[#3D2B1F] text-white border-none rounded-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--card-3-->
+                <li >
+                    <div class="card bg-base-100 w-full shadow-sm">
+                        <figure class="px-10 pt-1 h-80 w-full overflow-hidden ">
+                            <img src="images/WhatsApp Image 2026-09-30 at 10.17.34 PM (1).jpeg" class=" h-full w-full object-cover rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                             <h2 class="card-title text-[#3D2B1F] TEXT-[15PX] font-bold">SOFT LINEN</h2>
+                            <p>220$</p>
+                            <div class="card-actions">
+                                <button data-name="SOFT LINEN" data-price="220" class="btn buy-btn bg-[#3D2B1F] text-white border-none rounded-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--card-4-->
+                <li >
+                    <div class="card bg-base-100 w-full shadow-sm">
+                        <figure class="px-10 pt-1 h-80 w-full overflow-hidden ">
+                            <img src="images/WhatsApp Image 2026-09-30 at 10.17.34 PM (2).jpeg" class=" h-full w-full object-cover rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                             <h2 class="card-title text-[#3D2B1F] TEXT-[15PX] font-bold">AMBER NOIR</h2>
+                            <p>300$</p>
+                            <div class="card-actions">
+                                <button data-name="AMBER NOIR" data-price="300" class="btn buy-btn bg-[#3D2B1F] text-white border-none rounded-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--card-5-->
+                <li >
+                    <div class="card bg-base-100 w-full shadow-sm">
+                        <figure class="px-10 pt-1 h-80 w-full overflow-hidden ">
+                            <img src="images/WhatsApp Image 2026-09-30 at 10.17.34 PM (3).jpeg" class=" h-full w-full object-cover rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                             <h2 class="card-title text-[#3D2B1F] TEXT-[15PX] font-bold">CLOUD NINE</h2>
+                            <p>150$</p>
+                            <div class="card-actions">
+                                <button data-name="CLOUD NINE" data-price="150" class="btn buy-btn bg-[#3D2B1F] text-white border-none rounded-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--card-6-->
+                <li >
+                    <div class="card bg-base-100 w-full shadow-sm">
+                        <figure class="px-10 pt-1 h-80 w-full overflow-hidden ">
+                            <img src="images/WhatsApp Image 2026-09-30 at 10.17.34 PM.jpeg" class=" h-full w-full object-cover rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                             <h2 class="card-title text-[#3D2B1F] TEXT-[15PX] font-bold">PURE CALM</h2>
+                            <p>250$</p>
+                            <div class="card-actions">
+                                <button data-name="PURE CALM" data-price="250" class="btn buy-btn bg-[#3D2B1F] text-white border-none rounded-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--card-7-->
+                <li >
+                    <div class="card bg-base-100 w-full shadow-sm">
+                        <figure class="px-10 pt-1 h-80 w-full overflow-hidden ">
+                            <img src="images/WhatsApp Image 2026-09-30 at 10.17.35 PM (1).jpeg" class=" h-full w-full object-cover rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                             <h2 class="card-title text-[#3D2B1F] TEXT-[15PX] font-bold">COZY EMBER</h2>
+                            <p>300$</p>
+                            <div class="card-actions">
+                                <button data-name="COZY EMBER" data-price="300" class="btn buy-btn bg-[#3D2B1F] text-white border-none rounded-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--card-8-->
+                <li >
+                    <div class="card bg-base-100 w-full shadow-sm">
+                        <figure class="px-10 pt-1 h-80 w-full overflow-hidden ">
+                            <img src="images/WhatsApp Image 2026-09-30 at 10.17.35 PM (2).jpeg" class=" h-full w-full object-cover rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                             <h2 class="card-title text-[#3D2B1F] TEXT-[15PX] font-bold">OCEAN BREEZE</h2>
+                            <p>200$</p>
+                            <div class="card-actions">
+                                <button data-name="OCEAN BREEZE" data-price="200" class="btn buy-btn bg-[#3D2B1F] text-white border-none rounded-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--card-9-->
+                <li >
+                    <div class="card bg-base-100 w-full shadow-sm">
+                        <figure class="px-10 pt-1 h-80 w-full overflow-hidden ">
+                            <img src="images/WhatsApp Image 2026-09-30 at 10.17.35 PM (3).jpeg" class=" h-full w-full object-cover rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                             <h2 class="card-title text-[#3D2B1F] TEXT-[15PX] font-bold">LAVENDER HAZE</h2>
+                            <p>250$</p>
+                            <div class="card-actions">
+                                <button data-name="LAVENDER HAZE" data-price="250" class="btn buy-btn bg-[#3D2B1F] text-white border-none rounded-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--card-10-->
+                <li >
+                    <div class="card bg-base-100 w-full shadow-sm">
+                        <figure class="px-10 pt-1 h-80 w-full overflow-hidden ">
+                            <img src="images/WhatsApp Image 2026-09-30 at 10.17.35 PM.jpeg" class=" h-full w-full object-cover rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                             <h2 class="card-title text-[#3D2B1F] TEXT-[15PX] font-bold">WHITE TEA</h2>
+                            <p>400$</p>
+                            <div class="card-actions">
+                                <button data-name="WHITE TEA" data-price="400" class="btn buy-btn bg-[#3D2B1F] text-white border-none rounded-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--card-11-->
+                <li >
+                    <div class="card bg-base-100 w-full shadow-sm">
+                        <figure class="px-10 pt-1 h-80 w-full overflow-hidden ">
+                            <img src="images/WhatsApp Image 2026-09-30 at 10.17.36 PM (1).jpeg" class=" h-full w-full object-cover rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                             <h2 class="card-title text-[#3D2B1F] TEXT-[15PX] font-bold">SAGE & MOSS</h2>
+                            <p>220$</p>
+                            <div class="card-actions">
+                                <button data-name="SAGE & MOSS" data-price="220" class="btn buy-btn bg-[#3D2B1F] text-white border-none rounded-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--card-12-->
+                <li >
+                    <div class="card bg-base-100 w-full shadow-sm">
+                        <figure class="px-10 pt-1 h-80 w-full overflow-hidden ">
+                            <img src="images/WhatsApp Image 2026-09-30 at 10.17.36 PM.jpeg" class=" h-full w-full object-cover rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                             <h2 class="card-title text-[#3D2B1F] TEXT-[15PX] font-bold">SWEET BLOOM</h2>
+                            <p>180$</p>
+                            <div class="card-actions">
+                                <button data-name="SWEET BLOOM" data-price="180" class="btn buy-btn bg-[#3D2B1F] text-white border-none rounded-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <script src="script/java.js"></script>
+    </body>
+</html>
